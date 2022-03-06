@@ -1,4 +1,21 @@
+:root {
+  --medium-gray: #23252c;
+  --medium-dark-gray: #1a1b21;
+  --dark-gray: #161619;
+}
+
+html,
 body {
+  margin: 0;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--medium-gray);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -8,4 +25,36 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.card--container {
+  background-color: var(--medium-dark-gray);
+  color: white;
+  border-radius: 0.625em;
+  width: 90%;
+  max-width: 317px;
+  margin: 2em 0;
+}
+
+.header--img {
+  width: 100%;
+}
+
+.header--title {
+  margin: 0;
+}
+
+footer {
+  background-color: var(--dark-gray);
+  display: flex;
+  justify-content: center;
+  border-bottom-right-radius: 0.625em;
+  border-bottom-left-radius: 0.625em;
+  padding: 1em;
 }

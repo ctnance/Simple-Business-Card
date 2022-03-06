@@ -1,6 +1,7 @@
 import React from "react";
-import CardDetailContainer from "./CardDetailContainer";
 import CardIntro from "./CardIntro";
+import ContactContainer from "./ContactContainer";
+import CardDetailContainer from "./CardDetailContainer";
 
 export default function Main() {
   return (
@@ -10,10 +11,7 @@ export default function Main() {
         positon="Frontend Developer"
         website="laruasmith.website"
       />
-      <div>
-        <button>Email</button>
-        <button>LinkedIn</button>
-      </div>
+      <ContactContainer />
       <CardDetailContainer
         title="About"
         content="I am a frontend developer with a particular interest in making things simple
